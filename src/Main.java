@@ -1,9 +1,11 @@
-import programmers.Solution012_42587;
-import programmers.Soultion013_42627;
+import programmers.Solution015_42584;
 
 public class Main {
     public static void main(String[] args) {
-        Soultion013_42627 solution = new Soultion013_42627();
-        System.out.println(solution.solution(new int[][]{{0, 3}, {1, 9}, {2, 6}}));
+        Solution015_42584 solution = new Solution015_42584();
+        int[] solution1 = solution.solution(new int[]{1, 2, 3, 2, 3});
+        for (int i : solution1) {
+            System.out.println(i);
+        }
     }
 }
