@@ -48,8 +48,6 @@ public class Solution_026_148653 {
             }
 
         }
-
-
         return answer;
     }
 
