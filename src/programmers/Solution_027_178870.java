@@ -2,52 +2,46 @@ package programmers;
 
 public class Solution_027_178870 {
     public int[] solution(int[] sequence, int k) {
-        int[] sequence_sum = sequence.clone();
-        int[] answer = new int[2];
-
-        int max_index = (sequence_sum.length - 1);
-        boolean max_index_changed = false;
-        for (int i = 1; i <= sequence.length; i++) {
-            // 시간초과가 되면 이진 탐색을 써봐라
-            int min_index = 0;
-            max_index_changed = false;
-            while(min_index <= max_index) {
-                int index = (min_index + max_index)/ 2;
-                int value = sequence_sum[index];
-                if(value > k) {
-                    index = (min_index + index) / 2;
-                    max_index = index - 1;
-                }
-                else if(value == k) {
-                    // 근데 이진탐색을 쓰면 제일 왼쪽을 찾지를 못함
-                    int minus_i = 0;
-                    while(index - minus_i >= 0 && sequence_sum[index - minus_i] == value) {
-                        answer[0] = index - minus_i;
-                        answer[1] = index - minus_i + i - 1;
-                        minus_i++;
-                    }
-
-                    return answer;
-                }
-                else {
-                    index = (index + max_index) / 2;
-                    min_index = index + 1;
-                }
+        // 오름차순으로 정렬되어 있으니 뒤에서부터 찾는게 핵심
+        int n = 0;
+        int remain = k;
+        for (int i = sequence.length - 1; i >= 0; i--) {
+            if (sequence[i] > k) {
+                continue;
+            } else if (sequence[i] == k) {
+                return getAnswer(i, i, sequence);
             }
 
-            for (int j = 0; j < sequence_sum.length - i; j++) {
-                sequence_sum[j] += sequence[j + i];
-                if(sequence_sum[j] > k) {
-                    max_index = j - 1;
-                    max_index_changed = true;
+            // 왼쪽에 있는 요소로 오른쪽에 있는 요소보다 더 큰 합을 갖으려면
+            // 같은 길이거나 더 긴 부분수열이 필요한 것이 핵심
+            while (true) {
+                remain -= sequence[i - n];
+                if (remain == 0) {
+                    return getAnswer(i - n, i, sequence);
+                } else if (remain < 0) {
+                    remain += sequence[i];
                     break;
                 }
-            }
-            if(!max_index_changed) {
-                max_index--;
+                n++;
             }
         }
+        return new int[]{0, 0};
+    }
 
-        return answer;
+    int[] getAnswer(int start, int end, int[] sequence) {
+        // 길이가 짧은 수열이 여러 개인 경우 앞쪽(시작 인덱스가 작은)에 나오는 수열을 찾습니다.
+        // 라는 문제의 조건 때문에 이런 경우가 많다고 생각할 수 있는데
+        // 길이가 같은 수열이 존재하는 경우는 해당 수열의 값이 모두 동일한 경우 밖에 없음
+        while (true) {
+            if (start == 0) {
+                return new int[]{start, end};
+            }
+            if (sequence[start - 1] == sequence[end]) {
+                start--;
+                end--;
+            } else {
+                return new int[]{start, end};
+            }
+        }
     }
 }
