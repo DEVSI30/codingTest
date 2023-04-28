@@ -6,12 +6,6 @@ public class Solution_027_178870 {
         int n = 0;
         int remain = k;
         for (int i = sequence.length - 1; i >= 0; i--) {
-            if (sequence[i] > k) {
-                continue;
-            } else if (sequence[i] == k) {
-                return getAnswer(i, i, sequence);
-            }
-
             // 왼쪽에 있는 요소로 오른쪽에 있는 요소보다 더 큰 합을 갖으려면
             // 같은 길이거나 더 긴 부분수열이 필요한 것이 핵심
             while (true) {
