@@ -1,12 +1,10 @@
-import programmers.*;
-
-import java.util.Arrays;
+import programmers.Solution_028_181188;
 
 public class Main {
     public static void main(String[] args) {
-        Solution_027_178870 solution = new Solution_027_178870();
-        int[] answer = solution.solution(new int[]{2, 2, 2, 2, 2}, 6);
-        System.out.println(answer[0]);
-        System.out.println(answer[1]);
+        Solution_028_181188 solution = new Solution_028_181188();
+        int result = solution.solution(new int[][]{{4, 5}, {4, 8}, {10, 14}, {11, 13}, {5, 12}, {3, 7}, {1, 4}});
+        System.out.println("result = " + result);
     }
 }
+
