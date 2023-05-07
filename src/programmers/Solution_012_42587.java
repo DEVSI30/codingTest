@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class Solution012_42587 {
+public class Solution_012_42587 {
     // 코딩 테스트에서는 클래스 만들면 안되나요?
     static class Node {
         private final int priority;

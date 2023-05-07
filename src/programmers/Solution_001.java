@@ -11,7 +11,7 @@ import java.util.Map;
  * 마지막에 남은 key가 완주하지 못한 선수
  * 공간을 절약하기 위해서, 둘이 동시에 실행 시키는건 어떤가?
  */
-public class Solution001 {
+public class Solution_001 {
     public String solution(String[] participant, String[] completion) {
         Map<String, Integer> playerMap = new HashMap<>();
 

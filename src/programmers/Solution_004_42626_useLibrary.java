@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.PriorityQueue;
 
-public class Solution004_42626_useLibrary {
+public class Solution_004_42626_useLibrary {
 
     public int solution(int[] scoville, int K) {
         int answer = 0;

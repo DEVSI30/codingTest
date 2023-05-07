@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.*;
 
-public class Solution008_42895 {
+public class Solution_008_42895 {
     private List<Integer> stirAndFry(int A, int B) {
         List<Integer> result = new ArrayList<>();
         result.add(A + B);

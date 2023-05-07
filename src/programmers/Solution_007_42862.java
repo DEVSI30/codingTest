@@ -10,7 +10,7 @@ import java.util.List;
 
 1번부터 끝 번호까지 가면서 없는 사람은 왼쪽 사람에게 요구 후 없으면 오른쪽 사람에게 요구
  */
-public class Solution007_42862 {
+public class Solution_007_42862 {
     static class Student{
         Student prevStudent;
         Student nextStudent;

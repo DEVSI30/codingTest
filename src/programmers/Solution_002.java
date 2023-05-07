@@ -30,7 +30,7 @@ import java.util.HashSet;
  *
  * 소요시간 34분...............
  */
-public class Solution002 {
+public class Solution_002 {
     public boolean solution(String[] phone_book) {
 
         HashSet<String> phoneBookSet = new HashSet<>();

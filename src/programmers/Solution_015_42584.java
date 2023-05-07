@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.PriorityQueue;
 
-public class Solution015_42584{
+public class Solution_015_42584 {
     static class StockPriceAtTime implements Comparable<StockPriceAtTime>{
         private final int time;
         private final int price;

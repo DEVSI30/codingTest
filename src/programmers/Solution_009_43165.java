@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Solution009_43165 {
+public class Solution_009_43165 {
     // BFS 는 Queue 로 한다.
     public int solution(int[] numbers, int target) {
         Queue<Integer> que = new LinkedList<>();

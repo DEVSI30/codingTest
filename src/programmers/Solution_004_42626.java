@@ -20,7 +20,7 @@ import java.util.Stack;
 // 그러면 가장 마지막에 있는 자식은 어떻게 찾을거며,,
 
 
-public class Solution004_42626{
+public class Solution_004_42626 {
     static class MyBinaryTree {
         int value;
         MyBinaryTree parent;

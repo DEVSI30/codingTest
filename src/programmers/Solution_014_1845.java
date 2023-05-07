@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.HashSet;
 
-public class Solution014_1845 {
+public class Solution_014_1845 {
     public int solution(int[] nums) {
         int N = nums.length;
         HashSet<Integer> integers = new HashSet<>();

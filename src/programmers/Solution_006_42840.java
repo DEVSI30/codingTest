@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Solution006_42840 {
+public class Solution_006_42840 {
     static class SolvePattern {
         private final int solverId;
         private final int[] pattern;

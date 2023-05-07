@@ -1,6 +1,6 @@
 package programmers;
 
-public class Solution010_43238 {
+public class Solution_010_43238 {
     public long sumArray(long[] array){
         long total = 0L;
         for (long value : array) {

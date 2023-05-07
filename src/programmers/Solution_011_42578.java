@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.HashMap;
 
-public class Solution011_42578 {
+public class Solution_011_42578 {
     public int solution(String[][] clothes) {
         HashMap<String, Integer> clothesMap = new HashMap<>();
         for (String[] clothe : clothes) {

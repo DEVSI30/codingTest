@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * ["sun", "bed", "car"]	1	["car", "bed", "sun"]
  * ["abce", "abcd", "cdx"]	2	["abcd", "abce", "cdx"]
  */
-public class Solution016_xxx {
+public class Solution_016_xxx {
     class CustomString implements Comparable<CustomString>{
         private String originalString;
         private String subString;

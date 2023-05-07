@@ -3,7 +3,7 @@ package programmers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution013_42627 {
+public class Solution_013_42627 {
     static class Disk {
         private final int index;
         private final int requestTime;
