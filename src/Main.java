@@ -2,9 +2,10 @@ import programmers.*;
 
 public class Main {
     public static void main(String[] args) {
-        Solution_039_12951 solution031176962 = new Solution_039_12951();
-        String jadenString = solution031176962.solution("3people Unfollowed Me ");
-        System.out.println("solution = " + jadenString + "$end");
+        Solution_041_70129 solution= new Solution_041_70129();
+        int[] solution1 = solution.solution("110010101001");
+        System.out.println("solution1[0] = " + solution1[0]);
+        System.out.println("solution1[1] = " + solution1[1]);
     }
 }
 
