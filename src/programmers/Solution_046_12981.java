@@ -30,8 +30,8 @@ public class Solution_046_12981 {
             return answer;
         }
 
-        answer[0] = (count-1) % n + 1;
-        answer[1] = (count-1) / n + 1;
+        answer[0] = (count - 1) % n + 1;
+        answer[1] = (count - 1) / n + 1;
 
         return answer;
     }
