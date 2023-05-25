@@ -14,7 +14,7 @@ def create_file(max_seq, solution_number):
 
 if __name__ == '__main__':
     solution_number = input("문제 코드를 입력 :")
-    source_path = 'C:/Users/offset/IdeaProjects/codingTest/src/programmers'
+    source_path = os.path.abspath('..') + '\\src\\programmers'
     source_codes = os.listdir(source_path)
 
     seqList = []
