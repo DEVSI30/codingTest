@@ -2,8 +2,8 @@ import programmers.*;
 
 public class Main {
     public static void main(String[] args) {
-        Solution_047_12985 solution= new Solution_047_12985();
-        int solution1 = solution.solution(8, 4, 7);
+        Solution_049_12980 solution= new Solution_049_12980();
+        int solution1 = solution.solution(5000);
         System.out.println("solution1 = " + solution1);
     }
 }
