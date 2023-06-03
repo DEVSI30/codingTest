@@ -2,8 +2,8 @@ import programmers.*;
 
 public class Main {
     public static void main(String[] args) {
-        Solution_052_17680 solution= new Solution_052_17680();
-        System.out.println("solution1 = " + solution.solution(3, new String[]{"Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul"}));
+        Solution_053_138476 solution = new Solution_053_138476();
+        System.out.println("solution1 = " + solution.solution(6, new int[]{1, 3, 2, 5, 4, 5, 2, 3}));
     }
 }
 
