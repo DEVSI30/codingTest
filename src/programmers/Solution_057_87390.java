@@ -8,9 +8,9 @@ public class Solution_057_87390 {
         int[] answer = new int[size];
 
         for (int i = 0; i < size; i++) {
-            /**
-             * 2차원 배열의 좌표를 x, y 라고 하면
-             * max(x,y) 가 k 이면 k + 1
+            /*
+              2차원 배열의 좌표를 x, y 라고 하면
+              max(x,y) 가 k 이면 k + 1
              */
             answer[i] = (int) Math.max(startX, startY) + 1;
 
