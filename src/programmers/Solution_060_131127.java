@@ -1,9 +1,6 @@
 package programmers;
 
-import java.util.ArrayDeque;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
 public class Solution_060_131127 {
     public int solution(String[] want, int[] number, String[] discount) {
@@ -40,7 +37,7 @@ public class Solution_060_131127 {
             if (!m2.containsKey(k1)) {
                 return false;
             }
-            if (m1.get(k1) != m2.get(k1)) {
+            if (!Objects.equals(m1.get(k1), m2.get(k1))) {
                 return false;
             }
         }
