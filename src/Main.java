@@ -2,8 +2,11 @@ import programmers.*;
 
 public class Main {
     public static void main(String[] args) {
-        Solution_063_92335 solution = new Solution_063_92335();
-        System.out.println("solution1 = " + solution.solution(110011, 10));
+        Solution_064_17684 solution = new Solution_064_17684();
+        int[] kakaos = solution.solution("TOBEORNOTTOBEORTOBEORNOT");
+        for (int kakao : kakaos) {
+            System.out.println("kakao = " + kakao);
+        }
     }
 }
 
