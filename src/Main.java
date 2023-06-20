@@ -2,9 +2,11 @@ import programmers.*;
 
 public class Main {
     public static void main(String[] args) {
-        Solution_065_17687 solution = new Solution_065_17687();
-        String result = solution.solution(2, 4, 2, 1);
-        System.out.println("result = " + result);
+        Solution_066_42888 solution = new Solution_066_42888();
+        String[] result = solution.solution(new String[]{"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"});
+        for (String s : result) {
+            System.out.println("s = " + s);
+        }
     }
 }
 
