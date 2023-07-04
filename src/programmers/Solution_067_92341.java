@@ -58,11 +58,11 @@ public class Solution_067_92341 {
         IN, OUT
     }
 
-    public class ParkingFee {
-        private int defaultTime;
-        private int defaultFee;
-        private int perMinute;
-        private int perFee;
+    public static class ParkingFee {
+        private final int defaultTime;
+        private final int defaultFee;
+        private final int perMinute;
+        private final int perFee;
 
         public ParkingFee(int[] fees) {
             this.defaultTime = fees[0];
@@ -72,10 +72,10 @@ public class Solution_067_92341 {
         }
     }
 
-    public class ParkingHistory {
-        private String carNumber;
-        private int inOutTime;
-        private ParkingHistoryType parkingHistoryType;
+    public static class ParkingHistory {
+        private final String carNumber;
+        private final int inOutTime;
+        private final ParkingHistoryType parkingHistoryType;
 
         ParkingHistory(String record) {
             String[] recordSplit = record.split(" ");
