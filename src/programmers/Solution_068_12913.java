@@ -20,9 +20,7 @@ public class Solution_068_12913 {
             for (int j = 0; j < width; j++) {
                 nextMaxP[j] = land[i][j] + getMax(maxP, j);
             }
-            for (int j = 0; j < width; j++) {
-                maxP[j] = nextMaxP[j];
-            }
+            System.arraycopy(nextMaxP, 0, maxP, 0, width);
         }
 
         return Arrays.stream(maxP).max().getAsInt();
