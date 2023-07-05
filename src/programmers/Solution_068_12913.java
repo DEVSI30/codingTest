@@ -9,7 +9,7 @@ public class Solution_068_12913 {
     public int solution(int[][] land) {
         int height = land.length;
         int width = land[0].length;
-        int[] maxP = new int[]{};
+        int[] maxP = new int[width];
 
         for (int j = 0; j < width; j++) {
             maxP[j] = land[height - 1][j];
