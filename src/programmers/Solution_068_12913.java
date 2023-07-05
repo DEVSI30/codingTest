@@ -11,9 +11,7 @@ public class Solution_068_12913 {
         int width = land[0].length;
         int[] maxP = new int[width];
 
-        for (int j = 0; j < width; j++) {
-            maxP[j] = land[height - 1][j];
-        }
+        System.arraycopy(land[height - 1], 0, maxP, 0, width);
 
         for (int i = height - 2; i >= 0; i--) {
             int[] nextMaxP = new int[width];
