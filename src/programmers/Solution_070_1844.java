@@ -52,10 +52,10 @@ public class Solution_070_1844 {
         return -1;
     }
 
-    public class Status {
-        private int x;
-        private int y;
-        private int count;
+    public static class Status {
+        private final int x;
+        private final int y;
+        private final int count;
 
         public Status(int x, int y, int count) {
             this.x = x;
