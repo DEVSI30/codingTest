@@ -2,11 +2,9 @@ import programmers.*;
 
 public class Main {
     public static void main(String[] args) {
-        Solution_073_17686 solution = new Solution_073_17686();
-        String[] result = solution.solution(new String[]{"img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"});
-        for (String s : result) {
-            System.out.println("s = " + s);
-        }
+        Solution_074_17679 solution = new Solution_074_17679();
+        int result = solution.solution(4, 5, new String[]{"CCBDE", "AAADE", "AAABF", "CCBBF"});
+        System.out.println("result = " + result);
     }
 }
 
