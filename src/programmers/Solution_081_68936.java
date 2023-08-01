@@ -2,6 +2,7 @@ package programmers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class Solution_081_68936 {
     public int[] solution(int[][] arr) {
@@ -38,7 +39,7 @@ public class Solution_081_68936 {
             }
         }
 
-        return array2DList.stream().map(x -> count0And1(x)).reduce((x, y) -> new int[]{x[0] + y[0], x[1] + y[1]}).get();
+        return array2DList.stream().map(this::count0And1).reduce((x, y) -> new int[]{x[0] + y[0], x[1] + y[1]}).orElse(new int[]{0, 0});
     }
 
     public int[] count0And1(Array2D arr) {
@@ -56,7 +57,7 @@ public class Solution_081_68936 {
         return new int[]{count0, count1};
     }
 
-    class Array2D {
+    static class Array2D {
         int[][] arr;
         int height;
         int width;
@@ -74,11 +75,7 @@ public class Solution_081_68936 {
             }
             this.width = o[0].length;
             arr = new int[height][width];
-            for (int y = 0; y < height; y++) {
-                for (int x = 0; x < width; x++) {
-                    arr[y][x] = o[y][x];
-                }
-            }
+            IntStream.range(0, height).forEach(y -> System.arraycopy(o[y], 0, arr[y], 0, width));
         }
 
         public void fill(int value) {
